@@ -11,6 +11,7 @@ URL:		http://www.clutter-project.com/
 BuildRequires:	OpenGL-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	clutter-devel
 BuildRequires:	gstreamer-devel
 BuildRequires:	glib2-devel
 BuildRequires:	gtk-doc-common
