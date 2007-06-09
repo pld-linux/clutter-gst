@@ -8,7 +8,6 @@ Group:		Applications
 Source0:	http://www.clutter-project.org/sources/%{name}/0.1/%{name}-%{version}.tar.gz
 # Source0-md5:	13fb455ab14c32a06758ed02076f7fa5
 URL:		http://www.clutter-project.com/
-BuildRequires:	OpenGL-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	clutter-devel
