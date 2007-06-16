@@ -1,13 +1,13 @@
-#
 Summary:	Library integrating clutter with GStreamer
+Summary(pl.UTF-8):	Biblioteka integrująca clutter z GStreamerem
 Name:		clutter-gst
 Version:	0.1.1
 Release:	1
-License:	GPL v2
-Group:		Applications
-Source0:	http://www.clutter-project.org/sources/%{name}/0.1/%{name}-%{version}.tar.gz
+License:	LGPL v2+
+Group:		Libraries
+Source0:	http://www.clutter-project.org/sources/clutter-gst/0.1/%{name}-%{version}.tar.gz
 # Source0-md5:	13fb455ab14c32a06758ed02076f7fa5
-URL:		http://www.clutter-project.com/
+URL:		http://www.clutter-project.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	clutter-devel
@@ -17,15 +17,10 @@ BuildRequires:	gtk-doc-common
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Clutter is an open source software library for creating fast, visually
-rich graphical user interfaces. The most obvious example of potential
-usage is in media center type applications. We hope however it can be
-used for a lot more.
+Library integrating clutter with GStreamer.
 
-Clutter uses OpenGL (and soon optionally OpenGL ES) for rendering but
-with an API which hides the underlying GL complexity from the
-developer. The Clutter API is intended to be easy to use, efficient
-and flexible.
+%description -l pl.UTF-8
+Biblioteka integrująca clutter z GStreamerem.
 
 %package devel
 Summary:	Header files for clutter-gst library
