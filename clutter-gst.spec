@@ -8,12 +8,14 @@ Group:		Libraries
 Source0:	http://www.clutter-project.org/sources/clutter-gst/0.1/%{name}-%{version}.tar.gz
 # Source0-md5:	13fb455ab14c32a06758ed02076f7fa5
 URL:		http://www.clutter-project.org/
-BuildRequires:	autoconf
-BuildRequires:	automake
-BuildRequires:	clutter-devel
-BuildRequires:	gstreamer-devel
-BuildRequires:	glib2-devel
-BuildRequires:	gtk-doc-common
+BuildRequires:	autoconf >= 2.53
+BuildRequires:	automake >= 1:1.7
+BuildRequires:	clutter-devel >= 0.2
+BuildRequires:	gstreamer-devel >= 0.10
+BuildRequires:	gstreamer-plugins-base-devel >= 0.10
+BuildRequires:	gtk-doc >= 1.0
+BuildRequires:	libtool
+BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -27,6 +29,9 @@ Summary:	Header files for clutter-gst library
 Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki clutter-gst
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
+Requires:	clutter-devel >= 0.2
+Requires:	gstreamer-devel >= 0.10
+Requires:	gstreamer-plugins-base-devel >= 0.10
 
 %description devel
 Header files for clutter-gst library.
@@ -63,11 +68,14 @@ Dokumentacja API clutter-gst.
 
 %build
 %{__gtkdocize}
+%{__libtoolize}
 %{__aclocal}
 %{__autoconf}
+%{__autoheader}
 %{__automake}
 %configure \
 	--enable-gtk-doc \
+	--enable-static \
 	--with-html-dir=%{_gtkdocdir}
 
 %{__make}
@@ -86,15 +94,19 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog NEWS README
-%attr(755,root,root) %{_libdir}/lib*.so.*.*.*
+%doc AUTHORS ChangeLog README
+%attr(755,root,root) %{_libdir}/libclutter-gst-*.so.*.*.*
 
 %files devel
 %defattr(644,root,root,755)
-%{_includedir}/%{name}-*
-%{_libdir}/lib*.la
-%{_libdir}/lib*.so
-%{_pkgconfigdir}/*.pc
+%attr(755,root,root) %{_libdir}/libclutter-gst-*.so
+%{_libdir}/libclutter-gst-*.la
+%{_includedir}/clutter-gst-*
+%{_pkgconfigdir}/clutter-gst-*.pc
+
+%files static
+%defattr(644,root,root,755)
+%{_libdir}/libclutter-gst-*.a
 
 %files apidocs
 %defattr(644,root,root,755)
