@@ -1,0 +1,15 @@
+--- clutter-gst-0.3.1/configure.ac.orig	2007-07-06 16:36:04.000000000 +0200
++++ clutter-gst-0.3.1/configure.ac	2007-07-10 08:12:34.634813572 +0200
+@@ -81,11 +81,9 @@
+ 
+ GST_MAJORMINOR=0.10
+ 
+-pkg_modules="gstreamer-$GST_MAJORMINOR gstreamer-plugins-base-$GST_MAJORMINOR"
++pkg_modules="gstreamer-$GST_MAJORMINOR gstreamer-base-$GST_MAJORMINOR"
+ PKG_CHECK_MODULES(GST, [$pkg_modules])
+ 
+-GST_LIBS="$GST_LIBS -lgstinterfaces-$GST_MAJORMINOR -lgstvideo-$GST_MAJORMINOR -lgstaudio-$GST_MAJORMINOR"
+-
+ dnl ========================================================================
+ 
+ if test "x$GCC" = "xyes"; then
