@@ -11,7 +11,7 @@ Patch0:		%{name}-link.patch
 URL:		http://www.clutter-project.org/
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake >= 1:1.7
-BuildRequires:	clutter-devel >= 0.2
+BuildRequires:	clutter-devel >= 0.3
 BuildRequires:	gstreamer-devel >= 0.10
 BuildRequires:	gstreamer-plugins-base-devel >= 0.10
 BuildRequires:	gtk-doc >= 1.0
@@ -30,7 +30,7 @@ Summary:	Header files for clutter-gst library
 Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki clutter-gst
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Requires:	clutter-devel >= 0.2
+Requires:	clutter-devel >= 0.3
 Requires:	gstreamer-devel >= 0.10
 Requires:	gstreamer-plugins-base-devel >= 0.10
 
