@@ -7,6 +7,7 @@ License:	LGPL v2+
 Group:		Libraries
 Source0:	http://www.clutter-project.org/sources/clutter-gst/0.3/%{name}-%{version}.tar.gz
 # Source0-md5:	8c163232367adca8fce796a149af7989
+Patch0:		%{name}-link.patch
 URL:		http://www.clutter-project.org/
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake >= 1:1.7
@@ -65,6 +66,7 @@ Dokumentacja API clutter-gst.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %{__gtkdocize}
