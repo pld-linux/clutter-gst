@@ -1,17 +1,17 @@
 Summary:	Library integrating clutter with GStreamer
 Summary(pl.UTF-8):	Biblioteka integrująca clutter z GStreamerem
 Name:		clutter-gst
-Version:	0.4.0
+Version:	0.6.1
 Release:	1
 License:	LGPL v2+
 Group:		Libraries
-Source0:	http://www.clutter-project.org/sources/clutter-gst/0.4/%{name}-%{version}.tar.gz
-# Source0-md5:	9b6ff997131619705a9d3796d38929c9
+Source0:	http://www.clutter-project.org/sources/clutter-gst/0.6/%{name}-%{version}.tar.gz
+# Source0-md5:	cdee16fa97ed109a6850ecbbcfff9aea
 Patch0:		%{name}-link.patch
 URL:		http://www.clutter-project.org/
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake >= 1:1.7
-BuildRequires:	clutter-devel >= 0.4
+BuildRequires:	clutter-devel >= 0.6.0
 BuildRequires:	gstreamer-devel >= 0.10
 BuildRequires:	gstreamer-plugins-base-devel >= 0.10
 BuildRequires:	gtk-doc >= 1.0
@@ -30,7 +30,7 @@ Summary:	Header files for clutter-gst library
 Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki clutter-gst
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Requires:	clutter-devel >= 0.4
+Requires:	clutter-devel >= 0.6.0
 Requires:	gstreamer-devel >= 0.10
 Requires:	gstreamer-plugins-base-devel >= 0.10
 
@@ -103,7 +103,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/libclutter-gst-*.so
 %{_libdir}/libclutter-gst-*.la
-%{_includedir}/clutter-0.4/clutter-gst
+%{_includedir}/clutter-0.6/clutter-gst
 %{_pkgconfigdir}/clutter-gst-*.pc
 
 %files static
