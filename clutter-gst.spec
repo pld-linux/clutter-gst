@@ -10,7 +10,7 @@ Source0:	http://www.clutter-project.org/sources/clutter-gst/0.6/%{name}-%{versio
 Patch0:		%{name}-link.patch
 URL:		http://www.clutter-project.org/
 BuildRequires:	autoconf >= 2.53
-BuildRequires:	automake >= 1:1.7
+BuildRequires:	automake >= 1:1.9
 BuildRequires:	clutter-devel >= 0.6.0
 BuildRequires:	gstreamer-devel >= 0.10
 BuildRequires:	gstreamer-plugins-base-devel >= 0.10
@@ -97,18 +97,19 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog README
-%attr(755,root,root) %{_libdir}/libclutter-gst-*.so.*.*.*
+%attr(755,root,root) %{_libdir}/libclutter-gst-0.6.so.*.*.*
+%attr(755,root,root) %ghost %{_libdir}/libclutter-gst-0.6.so.0
 
 %files devel
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/libclutter-gst-*.so
-%{_libdir}/libclutter-gst-*.la
+%attr(755,root,root) %{_libdir}/libclutter-gst-0.6.so
+%{_libdir}/libclutter-gst-0.6.la
 %{_includedir}/clutter-0.6/clutter-gst
-%{_pkgconfigdir}/clutter-gst-*.pc
+%{_pkgconfigdir}/clutter-gst-0.6.pc
 
 %files static
 %defattr(644,root,root,755)
-%{_libdir}/libclutter-gst-*.a
+%{_libdir}/libclutter-gst-0.6.a
 
 %files apidocs
 %defattr(644,root,root,755)
