@@ -1,17 +1,18 @@
 Summary:	Library integrating clutter with GStreamer
 Summary(pl.UTF-8):	Biblioteka integrująca clutter z GStreamerem
 Name:		clutter-gst
-Version:	0.6.1
-Release:	2
+Version:	0.8.0
+Release:	1
 License:	LGPL v2+
 Group:		Libraries
-Source0:	http://www.clutter-project.org/sources/clutter-gst/0.6/%{name}-%{version}.tar.gz
-# Source0-md5:	cdee16fa97ed109a6850ecbbcfff9aea
+Source0:	http://www.clutter-project.org/sources/clutter-gst/0.8/%{name}-%{version}.tar.gz
+# Source0-md5:	9ebf9bbe406757472952743ca01870f3
 Patch0:		%{name}-link.patch
 URL:		http://www.clutter-project.org/
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake >= 1:1.9
-BuildRequires:	clutter-devel >= 0.6.0
+BuildRequires:	clutter-devel >= 0.8.2
+BuildRequires:	clutter-devel < 0.9
 BuildRequires:	gstreamer-devel >= 0.10
 BuildRequires:	gstreamer-plugins-base-devel >= 0.10
 BuildRequires:	gtk-doc >= 1.0
@@ -30,7 +31,8 @@ Summary:	Header files for clutter-gst library
 Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki clutter-gst
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Requires:	clutter-devel >= 0.6.0
+Requires:	clutter-devel >= 0.8.2
+Requires:	clutter-devel < 0.9
 Requires:	gstreamer-devel >= 0.10
 Requires:	gstreamer-plugins-base-devel >= 0.10
 
@@ -97,19 +99,19 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog README
-%attr(755,root,root) %{_libdir}/libclutter-gst-0.6.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/libclutter-gst-0.6.so.0
+%attr(755,root,root) %{_libdir}/libclutter-gst-0.8.so.*.*.*
+%attr(755,root,root) %ghost %{_libdir}/libclutter-gst-0.8.so.0
 
 %files devel
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/libclutter-gst-0.6.so
-%{_libdir}/libclutter-gst-0.6.la
-%{_includedir}/clutter-0.6/clutter-gst
-%{_pkgconfigdir}/clutter-gst-0.6.pc
+%attr(755,root,root) %{_libdir}/libclutter-gst-0.8.so
+%{_libdir}/libclutter-gst-0.8.la
+%{_includedir}/clutter-0.8/clutter-gst
+%{_pkgconfigdir}/clutter-gst-0.8.pc
 
 %files static
 %defattr(644,root,root,755)
-%{_libdir}/libclutter-gst-0.6.a
+%{_libdir}/libclutter-gst-0.8.a
 
 %files apidocs
 %defattr(644,root,root,755)
