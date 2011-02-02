@@ -13,6 +13,8 @@ URL:		http://www.clutter-project.org/
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake >= 1:1.9
 BuildRequires:	clutter-devel >= 1.2.0
+BuildRequires:	docbook-dtd412-xml
+BuildRequires:	glibc-misc
 BuildRequires:	gobject-introspection-devel >= 0.6.8
 BuildRequires:	gstreamer-devel >= 0.10
 BuildRequires:	gstreamer-plugins-base-devel >= 0.10
