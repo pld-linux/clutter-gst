@@ -2,7 +2,7 @@ Summary:	Library integrating clutter with GStreamer
 Summary(pl.UTF-8):	Biblioteka integrująca clutter z GStreamerem
 Name:		clutter-gst
 Version:	1.2.0
-Release:	1
+Release:	2
 License:	LGPL v2+
 Group:		Libraries
 Source0:	http://source.clutter-project.org/sources/clutter-gst/1.2/%{name}-%{version}.tar.bz2
@@ -96,6 +96,8 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+%{__rm} $RPM_BUILD_ROOT%{_libdir}/libclutter-gst-1.0.la
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -112,7 +114,6 @@ rm -rf $RPM_BUILD_ROOT
 %files devel
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/libclutter-gst-1.0.so
-%{_libdir}/libclutter-gst-1.0.la
 %{_includedir}/clutter-1.0/clutter-gst
 %{_datadir}/gir-1.0/ClutterGst-1.0.gir
 %{_pkgconfigdir}/clutter-gst-1.0.pc
