@@ -1,26 +1,29 @@
 Summary:	Library integrating clutter with GStreamer
 Summary(pl.UTF-8):	Biblioteka integrująca clutter z GStreamerem
 Name:		clutter-gst
-Version:	1.3.14
+Version:	1.4.0
 Release:	1
 License:	LGPL v2+
 Group:		Libraries
-Source0:	http://source.clutter-project.org/sources/clutter-gst/1.3/%{name}-%{version}.tar.bz2
-# Source0-md5:	5cd03bbf6d8905a62f9d3de1263bd74c
+Source0:	http://source.clutter-project.org/sources/clutter-gst/1.4/%{name}-%{version}.tar.xz
+# Source0-md5:	f35f8ebf529fd05345a6dc4deb06d9d5
 URL:		http://www.clutter-project.org/
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake >= 1:1.9
 BuildRequires:	clutter-devel >= 1.4.0
+BuildRequires:	cogl-devel >= 1.8.0
 BuildRequires:	docbook-dtd412-xml
+BuildRequires:	glib2-devel >= 1:2.28.0
 BuildRequires:	glibc-misc
 BuildRequires:	gobject-introspection-devel >= 0.6.8
-BuildRequires:	gstreamer-devel >= 0.10
-BuildRequires:	gstreamer-plugins-base-devel >= 0.10
-BuildRequires:	glib2-devel >= 1:2.28.0
+BuildRequires:	gstreamer-devel >= 0.10.26
+BuildRequires:	gstreamer-plugins-base-devel >= 0.10.26
 BuildRequires:	gtk-doc >= 1.8
 BuildRequires:	libtool
 BuildRequires:	pkgconfig
 BuildRequires:	python
+BuildRequires:	tar >= 1:1.22
+BuildRequires:	xz
 Requires:	clutter >= 1.4.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -36,8 +39,8 @@ Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki clutter-gst
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	clutter-devel >= 1.4.0
-Requires:	gstreamer-devel >= 0.10
-Requires:	gstreamer-plugins-base-devel >= 0.10
+Requires:	gstreamer-devel >= 0.10.26
+Requires:	gstreamer-plugins-base-devel >= 0.10.26
 
 %description devel
 Header files for clutter-gst library.
