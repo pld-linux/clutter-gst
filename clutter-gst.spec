@@ -1,12 +1,12 @@
 Summary:	Library integrating clutter with GStreamer
 Summary(pl.UTF-8):	Biblioteka integrująca clutter z GStreamerem
 Name:		clutter-gst
-Version:	1.4.0
+Version:	1.4.2
 Release:	1
 License:	LGPL v2+
 Group:		Libraries
 Source0:	http://source.clutter-project.org/sources/clutter-gst/1.4/%{name}-%{version}.tar.xz
-# Source0-md5:	f35f8ebf529fd05345a6dc4deb06d9d5
+# Source0-md5:	b2844d413a8dc5e8e0b966e6f56bce7c
 URL:		http://www.clutter-project.org/
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake >= 1:1.9
