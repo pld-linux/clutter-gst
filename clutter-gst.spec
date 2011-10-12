@@ -25,6 +25,9 @@ BuildRequires:	python
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
 Requires:	clutter >= 1.4.0
+Requires:	cogl >= 1.8.0
+Requires:	gstreamer >= 0.10.26
+Requires:	gstreamer-plugins-base >= 0.10.26
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -39,6 +42,7 @@ Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki clutter-gst
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	clutter-devel >= 1.4.0
+Requires:	cogl-devel >= 1.8.0
 Requires:	gstreamer-devel >= 0.10.26
 Requires:	gstreamer-plugins-base-devel >= 0.10.26
 
