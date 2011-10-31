@@ -19,7 +19,7 @@ BuildRequires:	gobject-introspection-devel >= 0.6.8
 BuildRequires:	gstreamer-devel >= 0.10.26
 BuildRequires:	gstreamer-plugins-base-devel >= 0.10.26
 BuildRequires:	gtk-doc >= 1.8
-BuildRequires:	libtool
+BuildRequires:	libtool >= 2:2.2.6
 BuildRequires:	pkgconfig
 BuildRequires:	python
 BuildRequires:	tar >= 1:1.22
