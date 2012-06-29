@@ -25,8 +25,9 @@ BuildRequires:	pkgconfig
 BuildRequires:	python
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
-Requires:	clutter >= 1.4.0
+Requires:	clutter >= 1.6.0
 Requires:	cogl >= 1.8.0
+Requires:	glib2 >= 1:2.28.0
 Requires:	gstreamer >= 0.10.26
 Requires:	gstreamer-plugins-bad >= 0.10.22.1
 Requires:	gstreamer-plugins-base >= 0.10.26
@@ -43,8 +44,9 @@ Summary:	Header files for clutter-gst library
 Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki clutter-gst
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Requires:	clutter-devel >= 1.4.0
+Requires:	clutter-devel >= 1.6.0
 Requires:	cogl-devel >= 1.8.0
+Requires:	glib2-devel >= 1:2.28.0
 Requires:	gstreamer-devel >= 0.10.26
 Requires:	gstreamer-plugins-bad-devel >= 0.10.22.1
 Requires:	gstreamer-plugins-base-devel >= 0.10.26
