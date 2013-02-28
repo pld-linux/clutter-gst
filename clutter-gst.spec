@@ -43,7 +43,7 @@ Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki clutter-gst
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	clutter-devel >= 1.6.0
-Requires:	cogl-devel >= 1.8.0
+Requires:	cogl-devel >= 1.10.0
 Requires:	glib2-devel >= 1:2.28.0
 Requires:	gstreamer-devel >= 1.0.0
 Requires:	gstreamer-plugins-base-devel >= 1.0.0
