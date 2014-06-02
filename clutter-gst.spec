@@ -1,12 +1,12 @@
 Summary:	Library integrating clutter with GStreamer
 Summary(pl.UTF-8):	Biblioteka integrująca clutter z GStreamerem
 Name:		clutter-gst
-Version:	2.0.10
-Release:	3
+Version:	2.0.12
+Release:	1
 License:	LGPL v2+
 Group:		Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/clutter-gst/2.0/%{name}-%{version}.tar.xz
-# Source0-md5:	6784d28c742bd04a7b193afd5a7bd560
+# Source0-md5:	3e845093843166001e65e1e4971c1588
 URL:		http://www.clutter-project.org/
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake >= 1:1.9
@@ -16,8 +16,8 @@ BuildRequires:	docbook-dtd412-xml
 BuildRequires:	glib2-devel >= 1:2.28.0
 BuildRequires:	glibc-misc
 BuildRequires:	gobject-introspection-devel >= 0.6.8
-BuildRequires:	gstreamer-devel >= 1.0.0
-BuildRequires:	gstreamer-plugins-base-devel >= 1.0.0
+BuildRequires:	gstreamer-devel >= 1.2.0
+BuildRequires:	gstreamer-plugins-base-devel >= 1.2.0
 BuildRequires:	gtk-doc >= 1.8
 BuildRequires:	libtool >= 2:2.2.6
 BuildRequires:	pkgconfig
@@ -27,8 +27,8 @@ BuildRequires:	xz
 Requires:	clutter >= 1.6.0
 Requires:	cogl >= 1.10.0
 Requires:	glib2 >= 1:2.28.0
-Requires:	gstreamer >= 1.0.0
-Requires:	gstreamer-plugins-base >= 1.0.0
+Requires:	gstreamer >= 1.2.0
+Requires:	gstreamer-plugins-base >= 1.2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -45,8 +45,8 @@ Requires:	%{name} = %{version}-%{release}
 Requires:	clutter-devel >= 1.6.0
 Requires:	cogl-devel >= 1.10.0
 Requires:	glib2-devel >= 1:2.28.0
-Requires:	gstreamer-devel >= 1.0.0
-Requires:	gstreamer-plugins-base-devel >= 1.0.0
+Requires:	gstreamer-devel >= 1.2.0
+Requires:	gstreamer-plugins-base-devel >= 1.2.0
 
 %description devel
 Header files for clutter-gst library.
