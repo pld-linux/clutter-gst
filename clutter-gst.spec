@@ -1,23 +1,23 @@
 Summary:	Library integrating clutter with GStreamer
 Summary(pl.UTF-8):	Biblioteka integrująca clutter z GStreamerem
 Name:		clutter-gst
-Version:	3.0.0
+Version:	3.0.2
 Release:	1
 License:	LGPL v2+
 Group:		Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/clutter-gst/3.0/%{name}-%{version}.tar.xz
-# Source0-md5:	269f56925f5e0cc935f3ebd1b0ed3285
+# Source0-md5:	7b9b450b3cdcd1d34d8313c1d4dfc315
 URL:		http://www.clutter-project.org/
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake >= 1:1.9
-BuildRequires:	clutter-devel >= 1.10.0
+BuildRequires:	clutter-devel >= 1.20.0
 BuildRequires:	cogl-devel >= 1.18
 BuildRequires:	docbook-dtd412-xml
 BuildRequires:	glib2-devel >= 1:2.28.0
 BuildRequires:	glibc-misc
 BuildRequires:	gobject-introspection-devel >= 0.6.8
-BuildRequires:	gstreamer-devel >= 1.2.0
-BuildRequires:	gstreamer-plugins-base-devel >= 1.2.0
+BuildRequires:	gstreamer-devel >= 1.4.0
+BuildRequires:	gstreamer-plugins-base-devel >= 1.4.0
 BuildRequires:	gtk-doc >= 1.11
 BuildRequires:	libtool >= 2:2.2.6
 BuildRequires:	pkgconfig
@@ -25,11 +25,11 @@ BuildRequires:	python
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	udev-glib-devel
 BuildRequires:	xz
-Requires:	clutter >= 1.10.0
+Requires:	clutter >= 1.20.0
 Requires:	cogl >= 1.18
 Requires:	glib2 >= 1:2.28.0
-Requires:	gstreamer >= 1.2.0
-Requires:	gstreamer-plugins-base >= 1.2.0
+Requires:	gstreamer >= 1.4.0
+Requires:	gstreamer-plugins-base >= 1.4.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -43,11 +43,11 @@ Summary:	Header files for clutter-gst library
 Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki clutter-gst
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Requires:	clutter-devel >= 1.10.0
+Requires:	clutter-devel >= 1.20.0
 Requires:	cogl-devel >= 1.18
 Requires:	glib2-devel >= 1:2.28.0
-Requires:	gstreamer-devel >= 1.2.0
-Requires:	gstreamer-plugins-base-devel >= 1.2.0
+Requires:	gstreamer-devel >= 1.4.0
+Requires:	gstreamer-plugins-base-devel >= 1.4.0
 
 %description devel
 Header files for clutter-gst library.
