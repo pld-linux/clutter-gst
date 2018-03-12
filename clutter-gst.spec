@@ -1,12 +1,12 @@
 Summary:	Library integrating clutter with GStreamer
 Summary(pl.UTF-8):	Biblioteka integrująca clutter z GStreamerem
 Name:		clutter-gst
-Version:	3.0.24
+Version:	3.0.26
 Release:	1
 License:	LGPL v2+
 Group:		Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/clutter-gst/3.0/%{name}-%{version}.tar.xz
-# Source0-md5:	3e145e24bb3c340eeeddafd18efe547d
+# Source0-md5:	7809ca6ce9d1a3490597fd4a7375c389
 URL:		http://www.clutter-project.org/
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake >= 1:1.14
@@ -107,7 +107,7 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT
 
 %{__rm} $RPM_BUILD_ROOT%{_libdir}/libclutter-gst-3.0.la \
-        $RPM_BUILD_ROOT%{_libdir}/gstreamer-1.0/libgstclutter-3.0.{a,la}
+        $RPM_BUILD_ROOT%{_libdir}/gstreamer-1.0/libcluttergst3.{a,la}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -120,7 +120,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS NEWS README
 %attr(755,root,root) %{_libdir}/libclutter-gst-3.0.so.*.*.*
 %attr(755,root,root) %ghost %{_libdir}/libclutter-gst-3.0.so.0
-%attr(755,root,root) %{_libdir}/gstreamer-1.0/libgstclutter-3.0.so
+%attr(755,root,root) %{_libdir}/gstreamer-1.0/libcluttergst3.so
 %{_libdir}/girepository-1.0/ClutterGst-3.0.typelib
 
 %files devel
