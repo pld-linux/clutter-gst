@@ -72,9 +72,7 @@ Summary:	clutter-gst API documentation
 Summary(pl.UTF-8):	Dokumentacja API clutter-gst
 Group:		Documentation
 Requires:	gtk-doc-common
-%if "%{_rpmversion}" >= "5"
 BuildArch:	noarch
-%endif
 
 %description apidocs
 clutter-gst API documentation.
